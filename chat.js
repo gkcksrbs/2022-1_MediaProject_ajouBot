@@ -3,6 +3,7 @@ const Chat = (function () {
 
   // init 함수
   function init() {
+    appendMessageTag("left", "아주봇", "안녕하세요!");
     // enter 키 이벤트
     $(document).on("keydown", "div.input-div textarea", function (e) {
       if (e.keyCode == 13 && !e.shiftKey) {
